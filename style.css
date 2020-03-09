@@ -2,24 +2,31 @@ body {
 	background-color: white;
 }
 
-#contact p::before {
+header h1 img {
+	width: 90px;
+}
+
+header p::before {
 	content: url("img/icon_msg.png");
 }
 
-#contact ul li img {
+header ul li img {
 	width: 35px;
 }
 
-nav {
+#parallax a {
 	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
-nav a::before {
-	/*line*/
+#parallax a:hover::before {
+	/*line turquoise */
 }
 
-nav a:hover {
-
+#parallax a:hover {
+	/*color: turquoise */
+	color: turquoise;
 }
 
 .section-title {
@@ -32,7 +39,7 @@ nav a:hover {
 
 .section-hr {
 	width: 72%;
-    margin-right: 0;
+    margin-right: 0.5rem;
     margin-top: 1.5rem;
     height: 5px;
     background-color: #F1F1F1;
@@ -40,6 +47,10 @@ nav a:hover {
 
 #featured {
 	padding: 2.5em 0 5em 0;
+}
+
+#featured img {
+	margin-left: -15px;
 }
 
 .featured-date {
@@ -63,6 +74,7 @@ nav a:hover {
 }
 
 #parallax {
+	color: white;
 	height: 420px;
 	background: #000000 url("img/header.jpg") no-repeat scroll center;
 	/*background: #000000 url("img/header.jpg") no-repeat fixed center;*/
@@ -112,35 +124,53 @@ nav a:hover {
 	padding: 3em 0 5em 0;
 }
 
-.hex-hover {}
-
-/* https://jtauber.github.io/articles/css-hexagon.html?fbclid=IwAR3MbZZdmas8WA3gYdzvVE4C8cO1l-TI3o9FTjpTfoKqRc9NVEjCcuc8nAs */
-.hex::before {
-    content: " ";
-    width: 0; height: 0;
-    border-bottom: 30px solid #6C6;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-    position: absolute;
-    top: -30px;
+/* Credit to https://www.youtube.com/watch?v=jPIskLkEvU4 */
+.hex-parent {
+	background-color: red;
+	width: 400px;
+	height: 180px;
+	transform: rotate(210deg);
+	overflow: hidden;
+	visibility: hidden;
 }
 
-.hex {
-    margin-top: 30px;
-    width: 104px;
-    height: 60px;
-    background-color: #6C6;
-    position: relative;
+.hex-child {
+	background-color: green;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-60deg);
+	overflow: hidden;
+	visibility: hidden;
 }
 
-.hex::after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -30px;
-    border-top: 30px solid #6C6;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
+.hex-baby {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	transform: rotate(-60deg);
+	overflow: hidden;
+	visibility: visible;
+}
+
+.hex-img {
+	width: 100%;
+	height: 100%; /* height: 100%; pour hexagon mais decal l image */
+	transform: rotate(-90deg);
+	background-size: contain;
+	background-position: center;
+	background-image: url("img/lj_portrait1.jpg");
+	
+}
+
+.hex-content {
+	padding: 35px 0;
+	text-align: center;
+	color: white;
+}
+
+.hex-content:hover {
+	background-image: linear-gradient(#18C6A3, #18C6A3);
+	opacity: 0.35;
 }
 
 #info {
@@ -200,6 +230,21 @@ nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
+	header h1 img {
+		width: 250px;
+	}
+	.section-title {
+		width: auto;
+	}
+
+	.section-hr {
+		width: 40%;
+	}
+
+	.featured-title {
+		font-size: 2em;
+	}
+
 	#banner{
 		height: 90px;
 		background: #000000 url(img/banner.jpg) no-repeat fixed center;
@@ -212,5 +257,13 @@ nav a:hover {
 
 	#news article a {
 		width: 100% !important;
+	}
+
+	.social {	
+		padding: 30px 15px;
+	}
+
+	#category .row > div {
+		margin-top: 3rem;
 	}
 }

@@ -16,10 +16,16 @@
   <body>
     <header>
       <div class="container">
-        <div class="row justify-content-between">
-          <h1><a href="#" title="home"><img src="img/logo.png" alt="Compagny Name" class="w-75"></a></h1>
-          <div id="contact" class="d-flex flex-row align-items-center">
+        <div class="row flex-column flex-md-row align-items-center">
+          <div class="flex-md-fill">
+            <h1><a href="#" title="home"><img src="img/logo.png" alt="Compagny Name" class="m-4 m-md-1"></a></h1>
+          </div>
+          
+          <div>
             <p class="text-uppercase mr-4 mt-1">Contactez-nous</p>
+          </div>
+
+          <div id="contact" class="mb-4 mb-md-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
               <li class="list-inline-item"><a href="#"><img src="img/linkedin.png" alt="Linkedin"></a></li>
@@ -137,16 +143,25 @@
           <h2 class="section-title">Lee Jeffries</h2>
           <hr class="section-hr">
         </div>
-        <!-- <div class="row"></div> -->
-        <!-- <div class="row"></div> -->
-      
-        <div class="hex">
-          <!-- <div class="hex-hover"> -->
-            <p>Lorem Titre</p>
-            <p>_______</p>
-            <p>Description</p>
-          <!-- </div> -->
+
+        <div class="row justify-content-between">
+
+          <div class="hex-parent">
+            <div class="hex-child">
+              <div class="hex-baby">
+                <div class="hex-img">
+                    <div class="hex-content">
+                      <p>Lorem Titre</p>
+                      <p>_______</p>
+                      <p>Description</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
 
       </div>
     </section>
@@ -155,7 +170,7 @@
       <div class="container">
         <div class="row justify-content-between">
 
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 mb-4 mb-md-0">
             <h3 class="info-title">Documentation</h3>
             <ul>
               <li><a href="#" class="text-uppercase">Télécharger le dossier de candidature au statut national étudiant entrepreneur</a></li>
@@ -193,23 +208,23 @@
           <div class="row">
             <div class="social d-flex align-items-center">
               <a href="#"><img src="img/f_fb.png" alt="Facebook"></a>
-              <p class="ml-3 mb-0">Facebook</p> <!-- hide on < md -->
+              <p class="ml-3 mb-0 d-none d-sm-block">Facebook</p> <!-- hide on < md -->
             </div>
             <div class="social d-flex align-items-center">
               <a href="#"><img src="img/f_in.png" alt="Linkedin"></a>
-              <p class="ml-3 mb-0">Linkedin</p>
+              <p class="ml-3 mb-0 d-none d-sm-block">Linkedin</p>
             </div>
             <div class="social d-flex align-items-center">
               <a href="#"><img src="img/f_twitter.png" alt="Twitter"></a>
-              <p class="ml-3 mb-0">Twitter</p>
+              <p class="ml-3 mb-0 d-none d-sm-block">Twitter</p>
             </div>
             <div class="social d-flex align-items-center">
               <a href="#"><img src="img/f_tumblr.png" alt="Tumblr"></a>
-              <p class="ml-3 mb-0">Tumblr</p>
+              <p class="ml-3 mb-0 d-none d-sm-block">Tumblr</p>
             </div>
             <div class="social d-flex align-items-center">
               <a href="#"><img src="img/f_yt.png" alt="Youtube"></a>
-              <p class="ml-3 mb-0">Youtube</p>
+              <p class="ml-3 mb-0 d-none d-sm-block">Youtube</p>
             </div>
           </div>
         </div>
@@ -217,19 +232,19 @@
 
       <div id="category">
         <div class="container">
-          <div class="row justify-content-around">
-            <div class="flex-column"> <!-- col-sm-12  -->
+          <div class="row flex-column flex-md-row justify-content-md-around align-content-center">
+            <div class="flex-column">
               <h5>Soutenez la photo</h5>
               <a href="#" class="btn btn-outline-light w-100">faire un don</a>
             </div>
 
-            <div> <!-- class="col-sm-12" -->
+            <div>
               <h5 class="text-uppercase">Initiative portée par :</h5>
               <hr class="category-hr">
-              <img src="img/partner.png" alt="logo of your partener Iteatime" class="img-partners mx-auto d-block">
+              <img src="img/partner.png" alt="logo of your partener Iteatime" class="img-partners mx-0 mx-md-auto d-block">
             </div>
 
-            <div> <!-- class="col-sm-12" -->
+            <div>
               <h5 class="text-uppercase">Rubriques</h5>
               <hr class="category-hr">
               <ul class="list-unstyled">
@@ -240,7 +255,7 @@
               </ul>
             </div>
 
-            <div> <!-- class="col-sm-12" -->
+            <div>
               <h5 class="text-uppercase">Youtube</h5>
               <hr class="category-hr">
               <a href="#"><img src="img/thumbnail1.jpg" alt="Youtube" class="img-thumb"></a>
