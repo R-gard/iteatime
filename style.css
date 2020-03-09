@@ -25,7 +25,6 @@ header ul li img {
 }
 
 #parallax a:hover {
-	/*color: turquoise */
 	color: turquoise;
 }
 
@@ -126,8 +125,7 @@ header ul li img {
 
 /* Credit to https://www.youtube.com/watch?v=jPIskLkEvU4 */
 .hex-parent {
-	background-color: red;
-	width: 400px;
+	width: 210px;
 	height: 180px;
 	transform: rotate(210deg);
 	overflow: hidden;
@@ -135,8 +133,7 @@ header ul li img {
 }
 
 .hex-child {
-	background-color: green;
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
 	transform: rotate(-60deg);
 	overflow: hidden;
@@ -144,33 +141,83 @@ header ul li img {
 }
 
 .hex-baby {
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
-	background-position: center;
 	transform: rotate(-60deg);
 	overflow: hidden;
 	visibility: visible;
 }
 
 .hex-img {
-	width: 100%;
-	height: 100%; /* height: 100%; pour hexagon mais decal l image */
+	/*width: 100%;*/
+	height: 120%;
 	transform: rotate(-90deg);
+	/*background-image: url("img/lj_portrait1.jpg");*/
 	background-size: contain;
-	background-position: center;
-	background-image: url("img/lj_portrait1.jpg");
+	background-position: 130%;
 	
 }
 
+.hex-layer {
+	height: 100%;
+}
+
+.hex-layer:hover {
+	background-image: linear-gradient(#18C6A3, #18C6A3);
+	opacity: 0.35; /* opacity : 1; fond bien arriere. 0.35, le fond passe devant la typo... */
+}
+
+.hex-layer:hover .hex-content{
+	visibility: visible;
+}
+
 .hex-content {
+	height: 100%;
+	margin-left: 30px;
 	padding: 35px 0;
 	text-align: center;
 	color: white;
+	visibility: hidden;
 }
 
-.hex-content:hover {
-	background-image: linear-gradient(#18C6A3, #18C6A3);
-	opacity: 0.35;
+.hex-row-margin {
+	margin-left: 90px;
+}
+
+#hex-1 {
+	background-image: url("img/lj_portrait1.jpg");
+}
+
+#hex-2 {
+	background-image: url("img/lj_portrait2.jpg");
+}
+
+#hex-3 {
+	background-image: url("img/lj_portrait3.jpg");
+}
+
+#hex-4 {
+	background-image: url("img/lj_portrait4.jpg");
+}
+
+#hex-5 {
+	background-image: url("img/lj_portrait5.jpg");
+}
+
+#hex-6 {
+	background-image: url("img/lj_portrait6.jpg");
+}
+
+#hex-7 {
+	background-image: url("img/lj_portrait7.jpg");
+}
+
+#hex-8 {
+	background-image: url("img/lj_portrait8.jpg");
+}
+
+#hex-9 {
+	background-image: url("img/lj_portrait9.jpg");
 }
 
 #info {
